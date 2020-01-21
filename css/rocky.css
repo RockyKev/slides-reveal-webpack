@@ -1,0 +1,27 @@
+body {
+  background: lightblue;
+  background-color: lightblue;
+}
+
+.reveal {
+  color: black;
+}
+
+.reveal h2 {
+  color: black;
+}
+
+.image-default {
+  width: 250px;
+}
+
+.image-double {
+  width: 500px;
+}
+
+.flex-down {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}

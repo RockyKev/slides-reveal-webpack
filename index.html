@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>reveal.js</title>
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/reveal.css" />
+    <link rel="stylesheet" href="css/theme/black.css" />
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/monokai.css" />
+
+    <!-- rocky's custom CSS for slides-->
+    <link rel="stylesheet" href="css/rocky.css" />
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.type = "text/css";
+      link.href = window.location.search.match(/print-pdf/gi)
+        ? "css/print/pdf.css"
+        : "css/print/paper.css";
+      document.getElementsByTagName("head")[0].appendChild(link);
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h2>React and Gatsby</h2>
+          <p>
+            Jan 2020 Presentation
+          </p>
+          <img class="image-default" src="images/react-logo.png" />
+          <img class="image-default" src="images/gatsby-logo.jpg" />
+          <img class="image-default" src="images/graphql-logo.png" />
+        </section>
+
+        <section>
+          <h2>Question to the Audience</h2>
+          <p>
+            What is your skill level on React? (i.e. how many projects have you
+            deployed?)
+          </p>
+        </section>
+
+        <section>
+          <h2>What is Gatsby?</h2>
+          <img src="images/gatsby-logo.jpg" />
+          <p>
+            (psst... visit the site...
+            <a href="https://www.gatsbyjs.org/">gatsbyjs.org</a>)
+          </p>
+        </section>
+
+        <section>
+          <h2>Gatsby's origin?</h2>
+          <p>
+            The original prototype was built to solve festival/conference
+            website issues.
+          </p>
+        </section>
+        
+        <section>
+          <section>
+            <h2>Okay but what is it really?</h2>
+            <img class="image-double" src="images/gatsby-logo.jpg" />
+            <img class="image-default" src="images/graphql-logo.png" />
+            <p>⬇️</p>
+          </section>
+
+          <section>
+            <img class="image-double" src="images/react-logo.png" />
+            <p>⬇️</p>
+          </section>
+
+          <section>
+            <img class="image-double" src="images/html-css-js.png" />
+            <p>⬇️</p>
+          </section>
+
+          <section>
+            <h2>tl;dr: You write code that makes it easier to write code.</h2>
+
+            <img src="" />
+          </section>
+        </section>
+
+        <section id="fragments">
+          <h2>Why Use Gatsby</h2>
+          <ul>
+            <li class="fragment">Incredibly newbie-friendly documentation</li>
+            <li class="fragment">
+              No requests to reload the entire page. Content-swapping.
+            </li>
+            <li class="fragment">Automatic optimization. (lazyload)</li>
+            <li class="fragment">Plugins (up to 5000+)</li>
+            <li class="fragment">
+              Export super fast/SEO friendly websites (Helmet)
+            </li>
+            <li class="fragment">Hotloading - immediate rendering</li>
+            <li class="fragment">Offline/Serviceworker out of the box</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Who uses Gatsby?</h2>
+          <img class="image-double" src="images/showcase.png" />
+        </section>
+
+        <section>
+          <h2>How does Gatsby deploy to production?</h2>
+
+          <p>Trick question. YOU DON'T!</p>
+          <ul>
+            <li>Build command generates pure html/css/js</li>
+            <li>
+              Upload anywhere. (github, netlify, contentful, $3 shared
+              server...)
+            </li>
+            <li>
+              Netlify + Gatsby (for continuous deployment from public or private
+              repos)
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Let's look at the code at talk about:</h2>
+          <ul>
+            <li>Gatsby Develop</li>
+            <li>How this data is being pulled</li>
+            <li>Hotloading/Devtools</li>
+            <li>File Structure</li>
+            <li>GraphQL Basics</li>
+            <li>styled-components</li>
+          </ul>
+          <p>Next ➡️ GraphQL</p>
+        </section>
+
+        <section>
+          <h2>What is GraphQL trying to solve?</h2>
+          <img class="image-double" src="images/graphql-logo.png" />
+        </section>
+
+		<section>
+			<h2>What is GraphQL trying to solve?</h2>
+			<p>A lot of companies switched from RESTful to GraphQL APIs for internal usage: IBM, Twitter, Walmart Labs, The New York Times, Intuit, Coursera, and the list goes on an on. They claim they like it and they like very much.</p>
+
+			<p>Other companies switched not only internal but their external APIs to GraphQL: AWS, Yelp, GitHub, Facebook, and Shopify among others. GitHub went so far as not even bothering with REST API. Their v4 is GraphQL-only.</p>
+		</section>
+  
+
+        <section>
+          <h2>The GraphiQl editor</h2>
+          <img class="image-double" src="images/graphiql.png" />
+        </section>
+
+        <section id="fragments">
+          <h2>Gatsby's future?</h2>
+          <ul>
+            <li class="fragment">Less crappy image integration</li>
+            <li class="fragment">
+              Better optimization for large websites (5000+ pages)
+            </li>
+            <li class="fragment">
+              Reducing prefetch data (all resources are currently
+              content-hashed)
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Final Verdict?</h2>
+
+		  <ul>
+			<li>
+				Gatsby has revolutionized what Static Site Generators are. (<a
+				  href="https://www.staticgen.com/"
+				  >https://www.staticgen.com/</a
+				>>)
+			  </li>
+			  <li>Gatsby has a place for small websites. (Portfolio, documentation, small stores)</li>
+			  <li>Gatsby has a place for sites with open APIs (Headless WordPress)</li>
+				  
+		  </ul>
+
+
+
+		</section>
+      </div>
+    </div>
+
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+        dependencies: [
+          { src: "plugin/markdown/marked.js" },
+          { src: "plugin/markdown/markdown.js" },
+          { src: "plugin/notes/notes.js", async: true },
+          { src: "plugin/highlight/highlight.js", async: true }
+        ]
+      });
+    </script>
+  </body>
+</html>
