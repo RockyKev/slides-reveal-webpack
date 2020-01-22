@@ -34,167 +34,189 @@
     <div class="reveal">
       <div class="slides">
         <section>
-          <h2>React and Gatsby</h2>
+          <h2>Webpack for Everybody</h2>
           <p>
             Jan 2020 Presentation
           </p>
-          <img class="image-default" src="images/react-logo.png" />
-          <img class="image-default" src="images/gatsby-logo.jpg" />
-          <img class="image-default" src="images/graphql-logo.png" />
+          <img src="images/Baby-Coding.jpg" />
         </section>
 
         <section>
-          <h2>Question to the Audience</h2>
+          <h2>Always looking for speakers/vteers</h2>
           <p>
-            What is your skill level on React? (i.e. how many projects have you
-            deployed?)
+            This is the easiest bulletpoint to add to your resume.
           </p>
+          <img src="images/want-you.jpg" style="width:50%" />
         </section>
 
         <section>
-          <h2>What is Gatsby?</h2>
-          <img src="images/gatsby-logo.jpg" />
+          <h2>How I present</h2>
+        </section>
+
+        <section id="fragments">
+          <h2>tl;dr: I just want pizza. What's Webpack?</h2>
+          <ul>
+            <li class="fragment">It's a module bundler</li>
+            <li class="fragment">
+              It merges your project into a few files
+            </li>
+            <li class="fragment">It minimizes your code for speed/efficency</li>
+            <li class="fragment">
+              It has loaders to convert file types to other file types
+            </li>
+            <li class="fragment">
+              It's super configurable (which also means you can break it)
+            </li>
+            <li class="fragment">It manages dependencies</li>
+            <li class="fragment">You are probably using it</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>What is Webpack?</h2>
+          <img src="images/what-is-webpack.png" />
           <p>
             (psst... visit the site...
-            <a href="https://www.gatsbyjs.org/">gatsbyjs.org</a>)
+            <a href="https://webpack.js.org/" target="_blank"
+              >https://webpack.js.org/</a
+            >)
           </p>
         </section>
 
         <section>
-          <h2>Gatsby's origin?</h2>
-          <p>
-            The original prototype was built to solve festival/conference
-            website issues.
-          </p>
+          <h3>What is Webpack trying to solve?</h3>
+          <img src="images/life-before.png" />
         </section>
-        
+
         <section>
-          <section>
-            <h2>Okay but what is it really?</h2>
-            <img class="image-double" src="images/gatsby-logo.jpg" />
-            <img class="image-default" src="images/graphql-logo.png" />
-            <p>⬇️</p>
-          </section>
-
-          <section>
-            <img class="image-double" src="images/react-logo.png" />
-            <p>⬇️</p>
-          </section>
-
-          <section>
-            <img class="image-double" src="images/html-css-js.png" />
-            <p>⬇️</p>
-          </section>
-
-          <section>
-            <h2>tl;dr: You write code that makes it easier to write code.</h2>
-
-            <img src="" />
-          </section>
+          <h3>About "webpack for everyone"</h3>
+          <img src="images/Baby-Coding.jpg" />
         </section>
 
         <section id="fragments">
-          <h2>Why Use Gatsby</h2>
-          <ul>
-            <li class="fragment">Incredibly newbie-friendly documentation</li>
-            <li class="fragment">
-              No requests to reload the entire page. Content-swapping.
-            </li>
-            <li class="fragment">Automatic optimization. (lazyload)</li>
-            <li class="fragment">Plugins (up to 5000+)</li>
-            <li class="fragment">
-              Export super fast/SEO friendly websites (Helmet)
-            </li>
-            <li class="fragment">Hotloading - immediate rendering</li>
-            <li class="fragment">Offline/Serviceworker out of the box</li>
-          </ul>
+          <h2>The challenge with Webpack</h2>
+          <p class="fragment">MOST PEOPLE:</p>
+          <p class="fragment">
+            Get a starter kit and don't ever think of webpack.
+          </p>
+
+          <p class="fragment">SELECT FEW:</p>
+          <p class="fragment">Modify options to set things up.</p>
+
+          <p class="fragment">THE ELITE:</p>
+          <p class="fragment">
+            Start from scratch or apply webpack to giant applications.
+          </p>
         </section>
 
         <section>
-          <h2>Who uses Gatsby?</h2>
-          <img class="image-double" src="images/showcase.png" />
+          <section>
+            <h2>MOST PEOPLE</h2>
+            <p>
+              You can use create-react-app, vue-cli, or copy a config from the
+              internet.
+            </p>
+            <img src="images/webpack1.png" />
+          </section>
+
+          <section>
+            <h2>SELECT FEW</h2>
+            <img src="images/webpack2.png" />
+          </section>
+
+          <section>
+            <h2>THE ELITE:</h2>
+            <img src="images/webpack3.png" />
+          </section>
+
+          <section>
+            <h2>THE (Slack and Onfido) USE-CASES:</h2>
+            <img src="images/slack.png" />
+            <img src="images/onfido.png" />
+          </section>
+        </section>
+
+        <!-- stopped here -->
+        <section>
+          <h2>UNDER THE HOOD</h2>
+          <img src="images/execution.png" />
         </section>
 
         <section>
-          <h2>How does Gatsby deploy to production?</h2>
-
-          <p>Trick question. YOU DON'T!</p>
-          <ul>
-            <li>Build command generates pure html/css/js</li>
-            <li>
-              Upload anywhere. (github, netlify, contentful, $3 shared
-              server...)
-            </li>
-            <li>
-              Netlify + Gatsby (for continuous deployment from public or private
-              repos)
-            </li>
-          </ul>
-        </section>
-
-        <section>
-          <h2>Let's look at the code at talk about:</h2>
-          <ul>
-            <li>Gatsby Develop</li>
-            <li>How this data is being pulled</li>
-            <li>Hotloading/Devtools</li>
+          <h2>SLIDES</h2>
+          <ol>
+            <li>Installing and Running Webpack and Webpack-CLI</li>
             <li>File Structure</li>
-            <li>GraphQL Basics</li>
-            <li>styled-components</li>
-          </ul>
-          <p>Next ➡️ GraphQL</p>
+            <li>Configuring</li>
+            <li>Bundling</li>
+            <li>Loaders</li>
+            <li>Caching</li>
+            <li>Continuous Deployment with watch mode</li>
+          </ol>
         </section>
 
         <section>
-          <h2>What is GraphQL trying to solve?</h2>
-          <img class="image-double" src="images/graphql-logo.png" />
-        </section>
+          <h2>Installing and Running Webpack and Webpack-CLI</h2>
 
-		<section>
-			<h2>What is GraphQL trying to solve?</h2>
-			<p>A lot of companies switched from RESTful to GraphQL APIs for internal usage: IBM, Twitter, Walmart Labs, The New York Times, Intuit, Coursera, and the list goes on an on. They claim they like it and they like very much.</p>
-
-			<p>Other companies switched not only internal but their external APIs to GraphQL: AWS, Yelp, GitHub, Facebook, and Shopify among others. GitHub went so far as not even bothering with REST API. Their v4 is GraphQL-only.</p>
-		</section>
-  
-
-        <section>
-          <h2>The GraphiQl editor</h2>
-          <img class="image-double" src="images/graphiql.png" />
-        </section>
-
-        <section id="fragments">
-          <h2>Gatsby's future?</h2>
-          <ul>
-            <li class="fragment">Less crappy image integration</li>
-            <li class="fragment">
-              Better optimization for large websites (5000+ pages)
-            </li>
-            <li class="fragment">
-              Reducing prefetch data (all resources are currently
-              content-hashed)
-            </li>
-          </ul>
+          <p><code>npm install webpack webpack-cli --save-dev</code></p>
+          <p>Right out of the box, it should work</p>
         </section>
 
         <section>
-          <h2>Final Verdict?</h2>
+          <section>
+            <h2>Tour of the Dist structure</h2>
 
-		  <ul>
-			<li>
-				Gatsby has revolutionized what Static Site Generators are. (<a
-				  href="https://www.staticgen.com/"
-				  >https://www.staticgen.com/</a
-				>>)
-			  </li>
-			  <li>Gatsby has a place for small websites. (Portfolio, documentation, small stores)</li>
-			  <li>Gatsby has a place for sites with open APIs (Headless WordPress)</li>
-				  
-		  </ul>
+            <img src="images/webpack-dist.png" />
+            <p>If you left it to default setup</p>
+          </section>
+          <section>
+            <h2>Tour of the File structure</h2>
 
+            <img src="images/minified.gif" />
+            <p>What it generates</p>
+          </section>
+        </section>
 
+        <section>
+          <h2>Configuring</h2>
+        </section>
 
-		</section>
+        <section>
+          <section>
+            <h2>Loaders</h2>
+            <p>(psst... click the link)</p>
+            <a href="https://webpack.js.org/concepts/loaders/" target="_blank"
+              >https://webpack.js.org/concepts/loaders/</a
+            >
+          </section>
+          <section>
+            <h2>Bundling</h2>
+            <p>Babel transpiler, ES2015 to JS, etc</p>
+            <img src="images/import.png" />
+          </section>
+
+          <section>
+            <h2>Bundling and more loaders</h2>
+            <p>(psst... click the link)</p>
+            <a href="https://github.com/webpack/webpack" target="_blank"
+              >https://github.com/webpack/webpack</a
+            >
+          </section>
+        </section>
+
+        <section>
+          <h2>Caching</h2>
+          <img src="images/webpack-caching.png" />
+        </section>
+
+        <section>
+          <h2>Continuous Deployment with watch mode</h2>
+        </section>
+
+        <section>
+          <h2>Webpack conclusions</h2>
+          <img src="images/what-is-webpack.png" />
+        </section>
       </div>
     </div>
 
